@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="sectionHome">
+        <div class="tourism-bg-container d-flex flex-column justify-content-end">
+            <div class="tourism-card">
+                <h1> Tourism </h1>
+                <p> plan your trip wherever you want to go </p>
+                <button class="button" onclick="display('sectionFavouritePlaces')"> Get Started </button>
+            </div>
+        </div>
+    </div>
+    <div id="sectionFavouritePlaces">
+        <div class="favourite-places-bg-container">
+            <h1 class="favourite-places-heading">Favourite Places</h1>
+
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionTajMahalDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Taj Mahal</h1>
+                    <p class="favourite-place-card-description">
+                        If there was just one symbol to represent all of India, it would be
+                        the Taj Mahal
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/tajmahal-img.png" class="favourite-place-card-image" />
+            </div>
+
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionGoldenTempleDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Golden Temple</h1>
+                    <p class="favourite-place-card-description">
+                        Amritsar is world-famous for the beautiful and highly revered Golden
+                        Temple
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/golden-temple-img.png" class="favourite-place-card-image" />
+            </div>
+
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionMysorePalaceDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Mysore Palace</h1>
+                    <p class="favourite-place-card-description">
+                        The Mysore Palace is a historical palace and the royal residence at
+                        Mysore .
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/mysore-palace-img.png" class="favourite-place-card-image" />
+            </div>
+
+            <div class="favourite-place-card-container d-flex flex-row" onclick="display('sectionVaranasiTempleDetailedView')">
+                <div>
+                    <h1 class="favourite-place-card-heading">Varanasi Temple</h1>
+                    <p class="favourite-place-card-description">
+                        Varanasi Temple is most famous Hindu temples dedicated to Lord Shiva
+                    </p>
+                </div>
+                <img src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/varanasi-temple-img.png" class="favourite-place-card-image" />
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionHome')"> Back </button>
+        </div>
+    </div>
+    <div id="sectionTajMahalDetailedView">
+        <div class="Detailed-View-bg-container">
+            <h1 class="Detailed-View-bg-container-heading"> Detailed View </h1>
+            <div class="Detailed-View-card-container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/49HTIoCccDY?rel=0" allowfullscreen></iframe>
+                </div>
+                <div class="Detailed-view-text-container">
+                    <h1 class="Detailed-view-text-container-heading"> Taj Mahal </h1>
+                    <p class="Detailed-view-text-container-para"> One of the seven wonders of the world, Taj Mahal is located on the banks of River Yamuna in Agra. It was built by the Mughal Emperor Shah Jahan as a memorial for his third wife, Mumtaz Mahal. It also houses the tomb of Shah Jahan himself. Constructed entirely out of white marble in the 17th century, Taj Mahal is one of the most beautiful monuments in the world. Every year visitors numbering more than the entire population of Agra pass through the magnificent gates to catch a glimpse of this breathtaking monument!
+                        A UNESCO World Heritage Site, the Taj Mahal stands for the Crown of Palaces in the Persian language. The tomb is laid out in a rectangular shape and can be approached through a massive gateway which has an arch and alcoves on either side of it. There are water channels and fountains in the entrance which makes the monument even more spectacular. The reflection of this majestic spectacle in the Yamuna is almost poetic in its perfection!
+                        Covering an area of approximately 42 Acres, the construction of the Taj Mahal began in 1631 and it took 17 years before it was completed in 1648! It was constructed using white marble obtained from Makrana in Rajasthan.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')"> Back </button>
+        </div>
+    </div>
+    <div id="sectionGoldenTempleDetailedView">
+        <div class="Detailed-View-bg-container">
+            <h1 class="Detailed-View-bg-container-heading"> Detailed View </h1>
+            <div class="Detailed-View-card-container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/m701WKQMeYQ?rel=0" allowfullscreen></iframe>
+                </div>
+                <div class="Detailed-view-text-container">
+                    <h1 class="Detailed-view-text-container-heading"> Golden Temple</h1>
+                    <p class="Detailed-view-text-container-para">
+                        The Golden Temple is a gurdwara located in the city of Amritsar, Punjab, India.
+                        It is the preeminent spiritual site of Sikhism.
+                        The man-made pool on the site of the temple was completed by the fourth Sikh Guru, Guru Ram Das, in 1577.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')"> Back </button>
+        </div>
+
+    </div>
+    <div id="sectionMysorePalaceDetailedView">
+        <div class="Detailed-View-bg-container">
+            <h1 class="Detailed-View-bg-container-heading"> Detailed View </h1>
+            <div class="Detailed-View-card-container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/sqtpLCP-stE?rel=0" allowfullscreen></iframe>
+                </div>
+                <div class="Detailed-view-text-container">
+                    <h1 class="Detailed-view-text-container-heading"> Mysore Palace</h1>
+                    <p class="Detailed-view-text-container-para">
+                        The Mysore Palace, also known as Amba Vilas Palace, is a historical palace and a royal residence .
+                        It is located in Mysore, Karnataka.
+                        It used to be the official residence of the Wadiyar dynasty and the seat of the Kingdom of Mysore.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')"> Back </button>
+        </div>
+
+
+    </div>
+    <div id="sectionVaranasiTempleDetailedView">
+
+        <div class="Detailed-View-bg-container">
+            <h1 class="Detailed-View-bg-container-heading"> Detailed View </h1>
+            <div class="Detailed-View-card-container">
+                <div class="embed-responsive embed-responsive-16by9">
+                    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rDsOi3MByCI?rel=0" allowfullscreen></iframe>
+                </div>
+                <div class="Detailed-view-text-container">
+                    <h1 class="Detailed-view-text-container-heading"> Varanasi Temple </h1>
+                    <p class="Detailed-view-text-container-para">
+                        Varanasi (Vārāṇasī; [ʋaːˈraːɳəsi]) is a city on the Ganges river in northern India that has a central place in pilgrimage, death, and mourning in the Hindu world, even as the traditions are transformed in the face of modernization, generational changes and emigration.[14][15]
+                        The city has a syncretic tradition of Muslim artisanship that underpins its tourism.
+                        The name Varanasi was officially so revived after 1947,
+                        but the city is still widely known by its earlier name Banaras or Benares (Banāras; [bəˈnaːrəs] (listen)), and its ancient name Kashi.
+                    </p>
+                </div>
+            </div>
+            <button class="btn btn-dark" onclick="display('sectionFavouritePlaces')"> Back </button>
+        </div>
+
+    </div>
+
+    <script type="text/javascript" src="https://d1tgh8fmlzexmh.cloudfront.net/ccbp-static-website/js/ccbp-ui-kit.js"></script>
+</body>
+
+</html>
