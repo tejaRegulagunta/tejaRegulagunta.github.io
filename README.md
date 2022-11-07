@@ -1,1 +1,0 @@
-# tejaRegulagunta.github.io
